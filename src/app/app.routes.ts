@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'cloud',
+    loadComponent: () => import('./cloud/cloud.page').then( m => m.CloudPage)
+  },
 ];
